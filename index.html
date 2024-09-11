@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Side: Image -->
+        <div class="image-container">
+            <img class="form-image" src="regi.jpg" alt="Registration Image">
+        </div>
+        
+
+        <!-- Right Side: Form -->
+        <div class="form-container">
+            <form class="registration-form">
+                <h2 class="form-heading">Student Registration Form</h2>
+                 
+
+                <div class="name1">
+
+                <div class="form-group">
+                <label class="form-label" for="fname">First Name:</label>
+                <input class="form-input" type="text" id="fname" name="firstname" placeholder="Your first name..">
+                </div>
+
+                <div class="form-group">
+                <label class="form-label" for="lname">Last Name:</label>
+                <input class="form-input" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+                
+                </div>
+
+                <label class="form-label" for="address">Address:</label>
+                <input class="form-input" type="text" id="address" name="address" placeholder="Your address..">
+
+                <label class="form-label">Gender:</label>
+                <div class="form-gender">
+                    <input class="form-radio" type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input class="form-radio" type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input class="form-radio" type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <label class="form-label" for="state">State:</label>
+                <select class="form-select" id="state" name="state">
+                    <option value="" >choose state</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="andhra">Andhra Pradesh</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="assam">Assam</option>
+                </select>
+
+                <label class="form-label" for="city">City:</label>
+                <select class="form-select" id="city" name="city">
+                    <option value="" >choose city</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="vijayawada">Vijayawada</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="amaravati">Amaravathi</option>
+                    <option value="mumbai">mumbai</option>
+                </select>
+
+                <label class="form-label" for="pincode">Pin Code:</label>
+                <input class="form-input" type="text" id="pincode" name="pincode" placeholder="Your pin code..">
+
+                <label class="form-label" for="course">Course:</label>
+                <select class="form-select" id="course" name="course">
+                    <option value="btech">B.Tech</option>
+                    <option value="mtech">M.Tech</option>
+                    <option value="mba">MBA</option>
+                </select>
+
+                <label class="form-label" for="email">Email ID:</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="Your email..">
+
+                <div class="form-buttons">
+                    <button class="form-button reset-button" type="reset">Reset</button>
+                    <button class="form-button submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

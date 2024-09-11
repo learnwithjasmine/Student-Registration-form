@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    display: flex;
+    justify-content:space-around;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.form-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name1 {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 80px;   
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width:100vh;
+}
+
+.form-input {
+    margin-top: 10px;
+    width: 200px; 
+}
+/* .name label{
+    margin-right: 10px;
+} */
+.form-container {
+    width: 50%;
+    padding: 40px;
+    background-color: #fdfdfd;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-radio {
+    margin-right: 10px;
+}
+
+.form-gender {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-gender label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-gender input{
+    margin-right: 5px;
+}
+
+.form-select {
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.form-button {
+    width: 48%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button.reset {
+    background-color: #7bfb0a;
+}
+
+.form-button:hover {
+    background-color: #da13a8;
+}
+
+.form-button.reset:hover {
+    background-color: #2a46f9;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        width: 90%;
+    } 
+
+    .image-container, .form-container {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
